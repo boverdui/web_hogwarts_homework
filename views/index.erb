@@ -1,0 +1,4 @@
+<% @students.each do |student| %>
+  <p><%= student.first_name() %> <%= student.last_name() %>
+  <a href="/students/<%= student.id %>">Show student details</a></p>
+<% end %>
