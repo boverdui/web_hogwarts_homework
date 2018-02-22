@@ -1,4 +1,7 @@
 <% @students.each do |student| %>
-  <p><%= student.first_name() %> <%= student.last_name() %>
+  <p><%= student.first_name() %> <%= student.last_name() %></p>
+  <p><%= student.house.name() %></p>
+  <img src="<%= student.house.logo_url %>" width=50px></p>
   <a href="/students/<%= student.id %>">Show student details</a></p>
+  <hr>
 <% end %>
